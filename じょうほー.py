@@ -1,3 +1,7 @@
+import pandas as pd
+import numpy as np
+
+
 import streamlit as st
 st.title('初めてのstreamlit')
 st.write('これから作品を作っていきます。')
@@ -28,10 +32,5 @@ if button:
 from PIL import Image
 img = Image.open('94644.jpg')
 st.image(img,caption='生活場面',use_column_width=True)
-import pandas as pd
-import numpy as np
-df = pd.DataFrame(
-   np.random.rand(100,2)/[50,50]+[36,64,138,19]
-   columns = ['36.677200485995705', '138.19117963246464',]
-)
-st.map(df)
+
+
